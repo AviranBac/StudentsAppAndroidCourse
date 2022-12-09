@@ -2,7 +2,6 @@ package com.example.studentsapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
@@ -67,6 +66,7 @@ public class StudentRecyclerList extends AppCompatActivity {
     interface OnItemClickListener {
         void onItemClick(int position);
     }
+
     interface OnCheckboxClickListener {
         void onCheckboxClick(int position, boolean checked);
     }

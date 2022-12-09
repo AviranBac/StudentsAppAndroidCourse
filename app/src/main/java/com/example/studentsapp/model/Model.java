@@ -7,7 +7,8 @@ public class Model {
     private static final Model _instance = new Model();
     private List<Student> data = new LinkedList<>();
 
-    private Model() {}
+    private Model() {
+    }
 
     public static Model instance() {
         return _instance;
@@ -24,4 +25,13 @@ public class Model {
     public void addStudent(Student student) {
         data.add(student);
     }
+
+    public void removeStudent(int pos) {
+        data.remove(pos);
+    }
+
+    public void editStudent(Student student, int pos) {
+        data.set(pos, student);
+    }
+
 }
