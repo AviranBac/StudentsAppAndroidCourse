@@ -22,7 +22,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:onClick="onNewStudentClick"
-        android:text="+"
+        android:text="@string/new_student_button"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".StudentDetailsActivity">
 
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onEditButtonClick"
+        android:text="@string/edit_button"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

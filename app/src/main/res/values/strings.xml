@@ -2,4 +2,7 @@
     <string name="students_list_title">Students List</string>
     <string name="student_details_title">Student Details</string>
     <string name="new_student_title">New Student</string>
+    <string name="edit_student_title">Edit Student</string>
+    <string name="edit_button">Edit</string>
+    <string name="new_student_button">+</string>
 </resources>

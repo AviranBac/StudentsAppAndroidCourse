@@ -17,6 +17,10 @@ public class Model {
         return data;
     }
 
+    public Student getStudent(int position) {
+        return data.get(position);
+    }
+
     public void addStudent(Student student) {
         data.add(student);
     }
