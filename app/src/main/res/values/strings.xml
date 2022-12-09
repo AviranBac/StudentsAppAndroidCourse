@@ -5,4 +5,16 @@
     <string name="edit_student_title">Edit Student</string>
     <string name="edit_button">Edit</string>
     <string name="new_student_button">+</string>
+    <string name="name_hint">name</string>
+    <string name="id_hint">id</string>
+    <string name="phone_hint">phone</string>
+    <string name="address_hint">address</string>
+    <string name="address_label">address:</string>
+    <string name="phone_label">phone:</string>
+    <string name="id_label">id:</string>
+    <string name="name_label">name:</string>
+    <string name="image">image</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="checked">checked</string>
 </resources>

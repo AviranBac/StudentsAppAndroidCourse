@@ -5,15 +5,13 @@ public class Student {
     private String id;
     private String phone;
     private String address;
-    private String avatarUrl;
     private Boolean checked;
 
-    public Student(String name, String id, String phone, String address, String avatarUrl, Boolean checked) {
+    public Student(String name, String id, String phone, String address, Boolean checked) {
         this.name = name;
         this.id = id;
         this.phone = phone;
         this.address = address;
-        this.avatarUrl = avatarUrl;
         this.checked = checked;
     }
 
@@ -47,14 +45,6 @@ public class Student {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getAvatarUrl() {
-        return this.avatarUrl;
-    }
-
-    public void setAvatarUrl(String avatarUrl) {
-        this.avatarUrl = avatarUrl;
     }
 
     public Boolean getChecked() {

@@ -6,6 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".StudentDetailsActivity">
 
+    <ImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_glasses"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/name_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_input"
+        app:layout_constraintStart_toStartOf="@+id/avatar_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_image_view" />
+
+    <TextView
+        android:id="@+id/id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/id_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_input"
+        app:layout_constraintStart_toStartOf="@+id/avatar_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+
+    <TextView
+        android:id="@+id/phone_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/phone_input"
+        app:layout_constraintStart_toStartOf="@+id/avatar_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/id_text_view" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/address_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/address_input"
+        app:layout_constraintStart_toStartOf="@+id/avatar_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text_view" />
+
+    <TextView
+        android:id="@+id/name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_image_view" />
+
+    <TextView
+        android:id="@+id/id_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/id_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <TextView
+        android:id="@+id/phone_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/phone_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/id_input" />
+
+    <TextView
+        android:id="@+id/address_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toEndOf="@+id/address_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/phone_input" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="@string/checked"
+        app:layout_constraintStart_toStartOf="@+id/address_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/address_input" />
+
     <Button
         android:id="@+id/edit_btn"
         android:layout_width="0dp"
