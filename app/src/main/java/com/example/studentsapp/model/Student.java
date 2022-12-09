@@ -3,13 +3,15 @@ package com.example.studentsapp.model;
 public class Student {
     private String name;
     private String id;
-    private String avatarUrl;
+    private String phone;
+    private String address;
     private Boolean checked;
 
-    public Student(String name, String id, String avatarUrl, Boolean checked) {
+    public Student(String name, String id, String phone, String address, Boolean checked) {
         this.name = name;
         this.id = id;
-        this.avatarUrl = avatarUrl;
+        this.phone = phone;
+        this.address = address;
         this.checked = checked;
     }
 
@@ -29,12 +31,20 @@ public class Student {
         this.id = id;
     }
 
-    public String getAvatarUrl() {
-        return this.avatarUrl;
+    public String getPhone() {
+        return this.phone;
     }
 
-    public void setAvatarUrl(String avatarUrl) {
-        this.avatarUrl = avatarUrl;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return this.address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Boolean getChecked() {
