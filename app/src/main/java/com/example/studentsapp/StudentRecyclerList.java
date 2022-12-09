@@ -20,6 +20,7 @@ import java.util.List;
 
 public class StudentRecyclerList extends AppCompatActivity {
     private List<Student> studentList;
+    private RecyclerView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class StudentRecyclerList extends AppCompatActivity {
 
         studentList = Model.instance().getAllStudents();
 
-        RecyclerView list = findViewById(R.id.studentrecycler_list);
+        list = findViewById(R.id.studentrecycler_list);
         list.setHasFixedSize(true);
         list.setLayoutManager(new LinearLayoutManager(this));
 
@@ -45,6 +46,17 @@ public class StudentRecyclerList extends AppCompatActivity {
             Student student = studentList.get(position);
             student.setChecked(checked);
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        studentList = Model.instance().getAllStudents();
+        list.getAdapter().notifyDataSetChanged();
+
+        if (studentList.size() > 0) {
+            list.getLayoutManager().scrollToPosition(0);
+        }
     }
 
     public void onNewStudentClick(View view) {
